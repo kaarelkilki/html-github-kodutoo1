@@ -3,19 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kontakt</title>
+    <title>Kontakt | NordClean</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+      :root {
+        --brand-ink: #1b2c24;
+        --brand-accent: #2f6f4e;
+        --brand-sand: #f3efe7;
+      }
+
+      body {
+        font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+        color: var(--brand-ink);
+      }
+
+      .brand-display {
+        font-family: "Fraunces", "Georgia", serif;
+        letter-spacing: -0.02em;
+      }
+
+      .contact-surface {
+        background: linear-gradient(140deg, #f8f3ea 0%, #e5efe6 100%);
+        border-radius: 24px;
+      }
+    </style>
   </head>
   <body class="bg-light">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Projekt</a>
+          <a class="navbar-brand" href="index.html">NordClean</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -50,7 +78,124 @@
     </header>
 
     <main class="container py-4">
-      <!-- TODO: Lisa kontaktvorm -->
+      <section class="contact-surface p-4 p-lg-5 shadow-sm">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <p class="text-uppercase text-muted fw-semibold mb-2">
+              NordClean – kodupuhastusteenus
+            </p>
+            <h1 class="brand-display display-6 fw-bold mb-3">
+              Võta meiega ühendust
+            </h1>
+            <p class="mb-4">
+              Kirjelda oma kodu või kontori vajadusi ja vastame ühe tööpäeva
+              jooksul. Vajad kiiret abi? Helista kohe.
+            </p>
+            <div class="bg-white rounded-4 p-4 shadow-sm">
+              <h2 class="h5 fw-bold mb-3">Tööpiirkond</h2>
+              <p class="text-muted mb-3">
+                Teenindame Tallinna, Harjumaa ja lähivaldu. Kaugemate piirkondade
+                jaoks küsi personaalset pakkumist.
+              </p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">Tallinn (kesklinn, Kalamaja, Kristiine)</li>
+                <li class="mb-2">Viimsi, Rae, Harku</li>
+                <li>Saue, Keila, Maardu</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="bg-white rounded-4 p-4 shadow-sm">
+              <h2 class="h5 fw-bold mb-3">Kontaktvorm</h2>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="name">Nimi</label>
+                    <input
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                      type="text"
+                      placeholder="Ees- ja perekonnanimi"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="email">E-post</label>
+                    <input
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      type="email"
+                      placeholder="nimi@näide.ee"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="phone">Telefon</label>
+                    <input
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="+372 5xxx xxxx"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="service">Teenuse tüüp</label>
+                    <select class="form-select" id="service" name="service">
+                      <option selected value="">Vali teenus</option>
+                      <option value="regular">Regulaarne kodukoristus</option>
+                      <option value="deep">Suurpuhastus</option>
+                      <option value="office">Väike kontor</option>
+                      <option value="move">Kolimise eel/järel koristus</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="address">Aadress</label>
+                    <input
+                      class="form-control"
+                      id="address"
+                      name="address"
+                      type="text"
+                      placeholder="Tänav, linn või vald"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="message">Sõnum</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Kirjelda ruumide suurust, sagedust ja erisoove"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        id="consent"
+                        name="consent"
+                        required
+                        type="checkbox"
+                      />
+                      <label class="form-check-label" for="consent">
+                        Nõustun, et minuga võetakse ühendust.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-success btn-lg" type="submit">
+                      Saada päring
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script
