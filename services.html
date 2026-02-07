@@ -10,12 +10,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+      .service-img { width: 100%; height: 200px; object-fit: cover; display: block; }
+      @media (min-width: 992px) { .service-img { height: 160px; } }
+    </style>
   </head>
   <body class="bg-light">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Projekt</a>
+          <a class="navbar-brand" href="index.html">NordClean</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -50,7 +54,85 @@
     </header>
 
     <main class="container py-4">
-      <!-- TODO: Lisa info/teenuste sisu -->
+      <section aria-labelledby="services-heading">
+        <h1 id="services-heading" class="mb-4">Info ja teenused</h1>
+
+        <p class="lead">Pakume professionaalseid puhastus- ja hooldusteenuseid kodudele ja ettevõtetele. Allpool on teenuste lühikirjeldused, tüüppakkumised ja kontaktivõimalus.</p>
+
+        <div class="row g-4 mt-3">
+          <article class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="images/aknapesu.jpg" class="card-img-top service-img" alt="Aknapesu - akende pesemine">
+              <div class="card-body d-flex flex-column">
+                <h2 class="h5 card-title">Aknapesu</h2>
+                <p class="card-text">Siseruumide ja välisakende pesu professionaalse varustusega. Sobib eramutele, korteritele ja äripindadele.</p>
+                <ul>
+                  <li>Kahepoolne pesu ja raamide puhastus</li>
+                  <li>Vedeliku- ja kriimuvastane viimistlus vajadusel</li>
+                  <li>Kõrgustes tööks ohutu varustus</li>
+                </ul>
+                <p class="mt-auto mb-2"><strong>Hinnanguline aeg:</strong> 30 min - 2 h (sõltuvalt objektist)</p>
+                <a class="btn btn-primary" href="contact.html" role="button" aria-label="Võta ühendust aknapesu jaoks">Küsi pakkumist</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+                <img src="images/kodukoristus.jpeg" class="card-img-top service-img" alt="Kodukoristus - kodu puhastamine">
+              <div class="card-body d-flex flex-column">
+                <h2 class="h5 card-title">Kodukoristus</h2>
+                <p class="card-text">Regulaarne ja põhjalik kodukoristus: tolmuimeja, põrandad, köök, vannituba ja pinnad. Püsikle pingete või ühekordsete suurpuhastuste korral.</p>
+                <ul>
+                  <li>Igakuine / nädalane / ühekordne teenus</li>
+                  <li>Lisateenused: akende puhastus, eritööde kokkulepe</li>
+                  <li>Kasutame keskkonnasõbralikke puhastusvahendeid</li>
+                </ul>
+                <p class="mt-auto mb-2"><strong>Hinnanguline aeg:</strong> 1–4 h</p>
+                <a class="btn btn-primary" href="contact.html" role="button" aria-label="Võta ühendust kodukoristuse jaoks">Broneeri koristus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+                <img src="images/kontorikoristus.jpg" class="card-img-top service-img" alt="Kontorikoristus - kontori puhastamine">
+              <div class="card-body d-flex flex-column">
+                <h2 class="h5 card-title">Kontorikoristus</h2>
+                <p class="card-text">Tõhus ja diskreetne kontorikoristus, mis hoiab tööruumid esinduslikud ja hügieenilised.</p>
+                <ul>
+                  <li>Igapäevane või perioodiline teenus</li>
+                  <li>Prügikäitlus ja taaskasutuse soodustamine</li>
+                  <li>Konverentsiruumide ja sisseseadetega kohandatud lahendused</li>
+                </ul>
+                <p class="mt-auto mb-2"><strong>Hinnanguline aeg:</strong> vastavalt kontori suurusele</p>
+                <a class="btn btn-primary" href="contact.html" role="button" aria-label="Võta ühendust kontorikoristuse jaoks">Küsi hinnapakkumist</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+                <img src="images/lisateenused.jpg" class="card-img-top service-img" alt="Lisateenused - vaipade puhastus">
+              <div class="card-body d-flex flex-column">
+                <h2 class="h5 card-title">Lisateenused</h2>
+                <p class="card-text">Täiendavad teenused, mis toetavad põhikoristust: tekstiilipesu, vaipade keemiline puhastus, akende tugevpuhastus ja välikoristused.</p>
+                <ul>
+                  <li>Vaipade sügavpuhastus</li>
+                  <li>Värske viimistlus ja lõhnakontroll</li>
+                  <li>Üksik- või projektipõhised tööd</li>
+                </ul>
+                <p class="mt-auto mb-2"><strong>Märkus:</strong> Lisateenuste täpne hind sõltub mahust ja materjalidest.</p>
+                <a class="btn btn-primary" href="contact.html" role="button" aria-label="Võta ühendust lisateenuste jaoks">Uuri lisateenuseid</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-4">
+          <p class="small text-muted">Kõik teenused on kindlustatud ja meie meeskond läbib taustakontrolli. Täpse pakkumise saamiseks saada meile sõnum läbi <a href="contact.html">kontaktivormi</a> või helista.</p>
+        </div>
+      </section>
     </main>
 
     <script
